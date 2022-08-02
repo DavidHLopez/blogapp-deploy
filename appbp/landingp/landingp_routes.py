@@ -1,37 +1,31 @@
 
 from flask import request, render_template
-from pymongo import MongoClient 
+
 
 from . import landingp 
 
-#mongoclient 
 
-client= MongoClient(port=27017)
-
-#db name
-
-db = client.contact_data
 
 
 @landingp.route('/', methods=['GET'])
 def home():
     return render_template('landingp_index.html')
 
-@landingp.route('/register', methods=['GET'])
-def reg():
-    return render_template('registerp_index.html')
+@landingp.route('/s01a01', methods=['GET'])
+def reg1():
+    return render_template('s01a01.html')
 
-@landingp.route( '/contactr', methods=['POST'])
+@landingp.route('/s01a02', methods=['GET'])
+def reg2():
+    return render_template('s01a02.html')
 
-def data(): 
-    data = {}
-    if request.method == "POST": 
-        data['Name'] = request.form ['name']
-        data['Email']= request.form ['email']
-        data['Message'] = request.form ['message']
-        db.contactData.insert_one(data) 
-        return render_template('contact_response.html')
+@landingp.route('/s01a03', methods=['GET'])
+def reg3():
+    return render_template('s01a03.html')
 
+@landingp.route('/s01a04', methods=['GET'])
+def reg4():
+    return render_template('rs01a04.html')
 
 
 
