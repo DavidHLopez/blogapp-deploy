@@ -1,7 +1,7 @@
 #config bp-routes
 
 from flask import Flask
-import flask
+from flask_cors import CORS
 
 
 
@@ -11,7 +11,7 @@ from .articles import articles
 
 
 app = Flask(__name__)
-
+CORS(app)
 app.config.from_pyfile('config/config.cfg')
 
 app.register_blueprint(landingp)
