@@ -27,6 +27,9 @@ def reg3():
 def reg4():
     return render_template('s01a04.html')
 
+@landingp.route('/s01a05', methods=['GET'])
+def reg5():
+    return render_template('s01a05.html')
 
 
 
