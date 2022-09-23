@@ -27,6 +27,20 @@ h1 {
   font-size: x-large;
 }
 
+.s1 {
+  
+  padding-right: 99pt;
+  font-size: x-large
+  }
+
+@media screen and (max-width: 768px) {
+  .s1 {
+  
+  padding-right: 20pt;
+  font-size: large
+  }
+}
+
 .page-nav {
   float: right; /* IE */
   width: 25%;
@@ -83,12 +97,15 @@ ul.page-nav {
   grid-row: 2 / 5;
   padding: 1rem 1rem 0 1rem;
 
-  font-size: large;
+  font-size: x-large;
 }
 
 @media screen and (max-width: 768px) {
   .article {
-     font-size: 22px;
+     font-size: 24px;
+    
+     padding: 0 0 0 0;
+
   }
 }
 
@@ -119,6 +136,11 @@ img.left {
   margin-top: 2rem;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+   .article-meta {
+    display: none;
+  }
+}
 
 .article-meta-author-portrait img {  
   width: 100px;
@@ -146,6 +168,12 @@ img.left {
   align-self: start;
 }
 
+@media screen and (max-width: 768px) {
+  .article-quote {
+   display: none;
+ }
+}
+
 .article-footer {
   float: left;
   width: 24%;
@@ -156,6 +184,12 @@ img.left {
   grid-row: 4 / 5;
   align-self: end;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .article-footer {
+   display: none;
+ }
 }
 
 .article p:last-child {
@@ -182,15 +216,17 @@ img.left {
   width: 25%;
   
   grid-column: 1 / 2;
+  font-size: x-large;
 }
 
 .footer-contact {
   float: left;
-  width: 23%;
+  width: 50%;
   margin-left: 1%;
   margin-right: 1%;
   
   grid-column: 2 / 3;
+  font-size: x-large
 }
 
 .footer-logos {
@@ -200,6 +236,13 @@ img.left {
   grid-column: 3 / 4;
   justify-self: end;
   text-align: right;
+}
+@media screen and (max-width: 768px) {
+  .footer-logos {
+   
+    grid-column: 1/3 ;
+   object-fit: scale-down;
+ }
 }
 
 @supports (display: grid) {
