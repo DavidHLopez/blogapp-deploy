@@ -6,6 +6,7 @@ html, body {
   padding: 0;
 }
 
+
 h1 {
   font-size: 2rem;
   font-family: 'Josefin Sans', 'Helvetica', 'Tahoma', sans-serif;
@@ -47,7 +48,21 @@ ul.page-nav {
 
 .page-nav-link {
   float: left;
-  background-color: #48b7eb;
+  background-color: #a442d1d3;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  margin-right: 5px; /* A small px margin for IE 8 */
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.25rem 0.25rem 0.25rem;
+}
+
+.page-nav-link2 {
+  float: left;
+  background-color: #5a4aecd3;
   color: #ffffff;
   text-decoration: none;
   display: inline-block;
@@ -69,6 +84,12 @@ ul.page-nav {
   padding: 1rem 1rem 0 1rem;
 
   font-size: large;
+}
+
+@media screen and (max-width: 768px) {
+  .article {
+     font-size: 22px;
+  }
 }
 
 img.right {
