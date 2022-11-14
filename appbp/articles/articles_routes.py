@@ -12,7 +12,7 @@ from . import articles
 
 def data():
         if request.method == "GET":
-            return render_template('index.html')
+            return render_template('landingp_index.html')
 
 
 
