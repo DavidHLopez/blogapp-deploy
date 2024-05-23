@@ -8,6 +8,8 @@ from flask_cors import CORS
 from .landingp import landingp
 
 from .articles import articles
+ 
+from .forms  import forms
 
 
 app = Flask(__name__)
@@ -18,3 +20,4 @@ app.register_blueprint(landingp)
 
 app.register_blueprint(articles)
 
+app.register_blueprint(forms)

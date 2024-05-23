@@ -31,6 +31,13 @@ def reg4():
 def reg5():
     return render_template('s01a05.html')
 
+@landingp.route('/RIPSPR', methods=['GET'])
+def reg6():
+    return render_template('RIPSPR.html')
+
+@landingp.route('/RDA', methods=['GET'])
+def reg():
+    return render_template('RDA.html')
 
 
 

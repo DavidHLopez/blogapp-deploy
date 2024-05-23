@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>interfaces TIC</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="static/css/main.css">
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="static/img/logo.png" style="width: 20%;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Página de inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Archivo HCUE </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ingresar/salir </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+    <div class="container">
+      <section class="row">
+        <div class="col-md-12">
+          <h1 class="text-center">Resumen Digital de la Atención en Salud</h1>
+          <h1 class="text-center">RDA</h1>
+          <p class="text-center">Adaptación de res 0866 de 2021, Ministerio de salud de Colombia</p>
+        </div>
+        <!-- Datos identificacion usuario -->
+      </section>
+      <hr><br />
+     
+      
+
+      <div class="row">
+        <section class="col-md-12">
+          <h3>Datos Identificación Usuario</h3>
+          <br />
+        </section>
+      </div>
+     
+      <section class="row">
+
+        
+       
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="apellidoUsuario">Primer apellido:</label>
+            <input type="text" class="form-control" id="apellidoUsuario" maxlength="128" placeholder="1 apellido" required>
+          </div>
+        </div>
+    
+
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="2apellidoUsuario">Segundo apellido:</label>
+          <input type="text" class="form-control" id="2apellidoUsuario" maxlength="128" placeholder="2 apellido" required>
+        </div>
+      </div>
+   
+   
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="nombre1">Nombre :</label>
+          <input type="text" class="form-control" id="nombreProfesional" maxlength="128" placeholder="Nombre" required>
+        </div>
+      </div>
+    
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="nombre2">Segundo nombre:</label>
+          <input type="text" class="form-control" id="nombre2" maxlength="128" placeholder="nombre2" required>
+        </div>
+      </div>
+ 
+
+    </section>
+
+      <section class="row">
+
+       
+              <div class="col-md-6">
+                <div class="form-group">
+                <label for="tipoDocumentoIdentificacion">Tipo de documento Identificación: *</label>
+                <select class="form-control" id="tipoId">
+                <option value="CC">CC Cédula de Ciudadanía</option>
+                <option value="CE">CE Cédula de Extranjería</option>
+                <option value="CD">CD Carné Diplomático</option>
+                <option value="PA">PA Pasaporte</option>
+                <option value="SC">SC Salvoconducto de permanencia</option>
+                <option value="PT">PT Permiso temporal de Permanencia</option>
+                <option value="PE">Permiso Especial de Permanencia</option>
+                <option value="RC">RC Registro Civil</option>
+                <option value="TI">TI tarjeta de Identidad</option>
+                <option value="CN">CN Certificado de nacido vivo</option>
+                <option value="AS">AS Adulto sin identificar</option>
+                <option value="MS">MS Menor sin identificar</option>
+                <option value="DE">Documento Extranjero</option>
+                <option value="SI">Sin identificacion</option>
+              </select>
+                </div>
+            </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label id="numDocumentoIdentificacion" for="numDocumentoIdentificacion">Numero de Identificación: *</label>
+            <input type="text" class="form-control" name="numDocumentoIdentificacion" id="numDocumentoIdentificacion" placeholder="numero id" maxlength="10" required/>
+          </div>
+        </div>
+      
+      </section>
+          <section>
+      <div class="row">
+         <div class="col-md-4">
+         <div class="form-group">
+           <label for="fechaNacimiento">Fecha de Nacimiento: </label>
+           <input type="date" class="form-control" id="fechaNacimiento" required>
+         </div> 
+         </div>
+       <div class="col-md-4">
+         <div class="form_group">
+           <label for="edadEncuestado">Edad:</label>
+           <input type="number" class="form-control" id="edadEncuestado" placeholder="Edad" maxlength="3" required/>
+         </div>
+       </div>
+      </div>
+     </section>
+<section class="row">
+      
+            <div class="col-md-4">
+              <div class="form-group">
+              <label for="estadoCivil">Estado Civil: </label>
+              <select class="form-control" id="estadoCivil">
+              <option value="soltero">Soltero/a</option>
+              <option value="casado">Casado/a</option>
+              <option value="unionL">Unión Libre</option>
+              <option value="ecOtro">Otro</option>
+              </select>
+            </div>
+            </div>
+            
+              <div class="col-md-4">
+                <div class="form-group">
+                <label for="identidadGenero">Identidad de Género: </label>
+                <select class="form-control" id="identidadGenero">
+                <option value="01">Masculino</option>
+                <option value="02">Femenino</option>
+                <option value="03">Transgénero</option>
+                <option value="04">Neutro</option>
+                <option value="05">No declara</option>
+                </select>
+                </div>
+              </div>
+             
+              <div class="col-md-4">
+                <div class="form-group">
+                <label for="codSexoBiologico">Sexo biológico: </label>
+                <select class="form-control" id="codSexoBiologico">
+                <option value="01">Masculino</option>
+                <option value="02">Femenino</option>
+                <option value="03">indeterminado/intersexual</option>               
+              </select>
+                </div>
+            </div>   
+        
+     </section>  
+ 
+  
+
+
+<section>
+
+<div class="row">
+     
+        <div class="col-md-3">
+          <p>¿Ocupación anterior?</p>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+          <label class="radio">
+          <input type="text" class="form-control" id="¿Cual?" maxlength="128" placeholder="¿Cual?" required>
+        </label>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <p>¿Ocupación actual?</p>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+          <label class="radio">
+        <input type="text" class="form-control" id="¿Cual?" maxlength="128" placeholder="¿Cual?" required>
+        </label></div>
+        </div>
+</div> 
+  </section>
+
+<section class="row">
+  <div class="col-md-6">
+    <p>Oposición a la presunción legal de donación.</p>
+  </div>
+  <div class="col-md-2">
+    <label class="radio">
+    <input type="radio" name="pregunta1" id="pregunta1a" value="SI"> Si
+  </label>
+  </div>
+  <div class="col-md-2">
+    <label class="radio">
+    <input type="radio" name="pregunta1" id="preguntab" value="NO"> No
+  </label>
+  </div>
+  <div class="col-md-6">
+    <p>Documento de voluntad anticipada.</p>
+  </div>
+  <div class="col-md-2">
+    <label class="radio">
+    <input type="radio" name="pregunta1" id="pregunta1a" value="SI"> Si
+  </label>
+  </div>
+  <div class="col-md-2">
+    <label class="radio">
+    <input type="radio" name="pregunta1" id="preguntab" value="NO"> No
+  </label>
+  </div>
+</section>
+<section class="row">
+<div class="col-md-4">
+  <div class="form-group">
+  <label for="estadoCivil">Categoría de discapacidad: </label>
+  <select class="form-control" id="discapacidad">
+  
+  <option value="fisica">Física</option>
+  <option value="visual">Visual</option>
+  <option value="auditiva">Auditiva</option>
+  <option value="intelectual">intelectual</option>
+  <option value="psicosocial">Psicosocial</option>
+  <option value="sordoceguera">Sordoceguera</option>
+  <option value="sindiscapacidad">Sin discapacidad</option>
+
+  </select>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="form-group">
+  <label for="estadoCivil">Pertenencia Étnica: </label>
+  <select class="form-control" id="discapacidad">
+  
+  <option value="indigena">Índigena</option>
+  <option value="rom">Rom (gitanos)</option>
+  <option value="raizal">Raizal (San Andrés y Providencia)</option>
+  <option value="palenquero">Palenquero  de San Basilio de Palenque</option>
+  <option value="Negr">Negro/a</option>
+  <option value="afrocolombiano">Afrocolombiano</option>
+  <option value="ninguna">Ninguna de las anteriores</option>
+
+  </select>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="form-group">
+  <label for="codPaisOrigen">País de origen:</label>
+  <input type="text" class="form-control" id="codPaisOrigen" placeholder="País de origen" maxlength="12" required/>
+</div>
+</div>
+</section>
+<section class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+    <label for="telefono">Dirección de residencia:</label>
+    <input type="text" class="form-control" id="direccion" placeholder="Dirección de residencia" maxlength="12" required/>
+  </div>
+  </div>
+  <div class="col-md-4">
+    <label for="telefono">Telefono: </label>
+    <input type="tel" class="form-control" id="telefono" placeholder="Numero Telefonico" maxlength="12" required/>
+  </div>
+
+</section>
+<section class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+    <label for="codPaisResidencia">País de residencia habitual:</label>
+    <input type="tel" class="form-control" id="codPaisResidencia" placeholder="País de residencia" maxlength="12" required/>
+  </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+    <label for="codMunicipioResidencia">Municipio de residencia habitual:</label>
+    <input type="tel" class="form-control" id="codMunicipioResidencia" placeholder="Municipio de residencia" maxlength="12" required/>
+  </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+    <label for="zonaresidencia">Zona territorial de residencia: </label>
+    <select class="form-control" id="zonaresidencia">
+    
+    <option value="urbana">Urbana</option>
+    <option value="rural">Rural</option>
+    
+    </select>
+    </div>
+  </div>
+</section>
+<section class="row">
+<div class="col-md-4">
+  <div class="form-group">
+  <label for="eapbPaciente">Entidad responsable PBS: </label>
+  <input type="text" class="form-control" id="eapb" placeholder= "EAPB" required />
+</div>
+</div>
+<div class="col-md-4">
+  <div class="form-group">
+  <label for="tipoUsuario">Régimen de afiliación: </label>
+  <select class="form-control" id="tipoUsuario">
+  
+  <option value="01">Subsiadiado</option>
+  <option value="02">Contributivo</option>
+  <option value="03">Beneficiario vinculado</option>
+  <option value="04">Otro</option>
+  
+
+  </select>
+  </div>
+</div>
+</section>
+
+<section class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+    <label for="acompañante">Acompañante o cuidador:</label>
+    <input type="text" class="form-control" id="nombreAcompañante" placeholder= "Nombre Acompañante" required />
+</div>
+</div>
+  <div class="col-md-4">
+    <label for="telefonoacompañante">Telefono acompañante: </label>
+    <input type="tel" class="form-control" id="telefono" placeholder="Numero Telefónico" maxlength="12" required/>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+    <label for="Parentesco">Parentesco:</label>
+    <input type="text" class="form-control" id="parentesco" placeholder= "Tio de parentesco" required />
+</div>
+</div>
+
+</section>
+    <!-- Contacto servicio de salud  -->
+
+          <hr><br />
+
+          <div class="row">
+            <section class="col-md-12">
+              <h3>Contacto con el Servicio de Salud</h3>
+              <br />
+            </section>
+          </div>
+
+          <section class="row">
+            
+            <div class="col-md-5">
+              <div class="form-group">
+                <label for="codigoPrestador">Código del prestador de servicios de salud que realiza la atención :</label>
+                <input type="text" class="form-control" id="codigoPrestador" maxlength="128" placeholder="código prestador" required>
+              </div>
+            </div>
+           
+            <div class="col-md-5">
+              <div class="form-group">
+                <label for="fechaAtencion">Fecha y hora inicio de la atención: </label>
+                <input type="datetime-local" class="form-control" id="fechaAtencion" required>
+              </div>   
+            </div>
+           
+          </section>
+            <section class="row">
+              
+                  <div class="col-md-6">
+                    <div class="form-group">
+                    <label for="modalidadGrupoServicioTecSal">Modalidad y grupo de servicios tecnología en salud</label>
+                    
+                    <select class="form-control" id="modalidadGrupoServicioTecSal">
+                      <option value="01">Intramural</option>
+                      <option value="02">Extramural unidad móvil</option>
+                      <option value="03">Extramural domiciliaria</option>
+                      <option value="04">Extramural jornada de salud</option>
+                      <option value="05">Extramural (atención prehospitalaria)</option>
+                      <option value="06">Telemedicina interactiva</option>
+                      <option value="07">Telemedicina no interactiva</option>
+                      <option value="08">Telemedicina-Telexperticia</option>
+                      <option value="09">Telemedicina-Telemonitoreo</option>
+                    </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                    <label for="grupo servicios"> Grupo servicio</label>
+ 
+                      <select class="form-control" id="grupoServicios">
+                        <option value="01">Consulta externa</option>
+                        <option value="02">Apoyo diagnóstico y complementación terapéutica</option>
+                        <option value="03">Internación</option>
+                        <option value="04">Quirurgico</option>
+                        <option value="05">Atención inmediata</option>
+                      </select>
+                    </div>
+                  </div>
+  
+            </section>
+
+            <section class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                <label for="entornoAtencion">Entorno atención</label>
+
+                  <select class="form-control" id="entornoAtención">
+                    <option value="01">Hogar</option>
+                    <option value="02">Comunitario</option>
+                    <option value="03">Escolar</option>
+                    <option value="04">Laboral</option>
+                    <option value="05">Institucional</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="col-md-6">
+                  <div class="form-group">
+                  <label for="viaIngresoServicioSalud">Vía de ingreso al servicio de salud</label>
+                  
+                  <select class="form-control" id="viaIngresoServicioSalud">
+                    <option value="01">Demanda espontánea</option>
+                    <option value="02">Derivado de consulta externa</option>
+                    <option value="03">Derivado de Urgencias</option>
+                    <option value="04">Derivado de hospitalización</option>
+                    <option value="05">Derivado de sala de cirugía</option>
+                    <option value="06">Derivado de sala de partos</option>
+                    <option value="07">Recién nacido en la institución</option>
+                    <option value="08">Recién nacido en otra institución</option>
+                    <option value="09">Derivado o referido de hospitalización domiciliaria</option>
+                    <option value="10">Derivado o referido de atención domiciliaria</option>
+                    <option value="11">Derivado de telemedicina</option>
+                    <option value="12">Derivado de jornada de salud</option>
+                    <option value="13">Referido de otra institución</option>
+                    <option value="14">Contra referido de otra institución</option>
+                  </select>
+                  </div>
+              </div>
+            </section>
+            <section class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                <label for="causaMotivoAtencion">Causa que motiva la atención</label>
+                
+                <select class="form-control" id="modalidadGrupoServicioTecSal">
+                  <option value="21">Accidente de trabajo</option>
+                  <option value="22">Accidente en el hogar</option>
+                  <option value="33">Accidente de tránsito de origen común</option>
+                  <option value="24">Accidente de tránsito de origen laboral</option>
+                  <option value="25">Accidente en el entorno educativo</option>
+                  <option value="26">Otro tipo de accidente</option>
+                  <option value="27">Evento catastrófico de origen natural</option>
+                  <option value="28">Lesión por agresión</option>
+                  <option value="29">Lesión autoinflingida</option>
+                  <option value="30">Sospecha de violencia física</option>
+                  <option value="31">Sospecha de violencia psicológica</option>
+                  <option value="32">Sospecha de violencia sexual</option>
+                  <option value="33">Sospecha de negligencia y abandono</option>
+                  <option value="34">IVE relacionado con peligro a la salud o vida de la mujer</option>
+                  <option value="35">IVE por malformación congénita o incompatible con la vida</option>
+                  <option value="36">IVE por violencia sexual, incesto o por inseminación artificial o transferencia de óvulo fecundado no consentida</option>
+                  <option value="37">Evento adverso en salud</option>
+                  <option value="38">Enfermedad General</option>
+                  <option value="39">Enfermedad laboral</option>
+                  <option value="40">Promoción y mantenimiento de la salud- intervenciones individuales</option>
+                  <option value="41">Intervención colectiva</option>
+                  <option value="42">Atención de población materno perinatal</option>
+                  <option value="43">Seguridad y salud en el trabajo</option>
+                  <option value="44">Otros eventos catastróficos</option>
+                  <option value="45">Accidente de mina antipersonal MAP</option>
+                  <option value="46">Accidente de artefacto explosivo improvisado</option>
+                  <option value="47">Accidente de munición sin explotar</option>
+                  <option value="48">Otra victima del conflicto armado colombiano</option>
+                  <option value="49">Riesgo ambiental</option>
+
+                  
+                </select>
+                </div>
+              </div>
+            </section>
+
+          <section class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                <label for="triage">Clasificación Triage</label>
+
+                  <select class="form-control" id="nivelTriage">
+                    <option value="01">Triage I</option>
+                    <option value="02">Triage II</option>
+                    <option value="03">Triage III</option>
+                    <option value="04">Triage IV</option>
+                    <option value="05">Triage V</option>
+                  </select>
+                </div>
+              </div>
+             
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="fechaTriage">Fecha y hora Triage: </label>
+                  <input type="datetime-local" class="form-control" id="fechaTriage" required>
+                </div>   
+             </div>
+          </section>
+
+           <section class="row">
+
+              <div class="col-md-4">
+                    <div class="form-group">
+                    <label id="CIE-label" for="cie">Código CIE diagnóstico principal: </label>
+                    <input type="text" class="form-control" name="cie" id="cie" placeholder="codigo CIE" maxlength="20" required/>
+                    </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="form-group">
+                  <label for="nombreDiagnostico">Nombre del diagnóstico principal:</label>
+                  <input type="text" class="form-control" id="nombreDiagnostico" placeholder="nombre diagnostico" maxlength="30" required/>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                <label for="tipoDiagnosticoPrincipal">Diagnóstico principal de ingreso</label>
+
+                    <select class="form-control" id="nivelTriage">
+                      <option value="01">Inmpresión diagnóstica</option>
+                      <option value="02">Confirmado nuevo</option>
+                      <option value="03">Confirmado repetido</option>
+                    
+                    </select>
+                </div>
+              </div>
+
+            </section>
+           
+   
+ 
+             
+            
+    <!-- Tecnologías en Salud  -->
+    <hr><br />
+      <section class="row">
+        <div class="col-md-12">
+          <h3>Tecnologías en Salud</h3>
+          <p></p>
+        </div>
+      </section>
+      <!--   -->
+      <br>
+      <section class="row">
+
+        <div class="col-md-6">
+          <div class="form-group">
+          <label for="modalidadGrupoServicioTecSal">Tipo de Tecnología en salud</label>
+          
+          <select class="form-control" id="modalidadGrupoServicioTecSal">
+            <option value="01">Procedimiento en salud</option>
+            <option value="02">Medicamento con registro sanitario</option>
+            <option value="03">Medicamento vital no disponible</option>
+            <option value="04">Preparación magistral</option>
+            <option value="05">Medicamento con uso no incluido en el registro sanitario (listado UNIRS)</option>
+            <option value="06">Dispositivo médico</option>
+            <option value="07">Componentes sanguineos</option>
+            <option value="08">Fluidos orgánicos</option>
+            <option value="09">Órganos</option>
+            <option value="10">Tejidos</option>
+            <option value="11">Células</option>
+            <option value="12">Producto de soporte nutricional</option>
+            <option value="13">Servicio complementario</option>
+            
+          </select>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group">
+        <label id="codTecnologiaSalud" for="codTecnologiaSalud">Código tecnología en salud (CUPS): </label>
+        <input type="text" class="form-control" name="codTecnologiaSalud" id="codTecnologiaSalud" placeholder="codigo CUPS" maxlength="35" required/>
+        </div>
+      </div>
+      
+      <div class="col-md-10">
+        <div class="form-group">
+        <label id="nomTecnologiaSalud" for="nomTecnologiaSalud">Nombre tecnología en salud: </label>
+        <textarea class="form-control" rows="1" name="nomTecnologiaSalud" id="nomTecnologiaSalud" placeholder="Nombre Tecnología" maxlength="20" required> </textarea>
+        </div>
+    </div>
+       
+      </section>
+  <section class="row">
+
+    <div class="col-md-6">
+      <div class="form-group">
+      <label for="finalidadTecnologíaSalud">Finalidad de la Tecnología en salud</label>
+      
+      <select class="form-control" id="finalidadTecnologíaSalud">
+        <option value="11">Valoración integral para la promoción y el mantenimiento</option>
+        <option value="12">Detección temprana de enfermedad general</option>
+        <option value="13">Detección temprana de enfermedad labboral</option>
+        <option value="14">Protección específica</option>
+        <option value="15">Diagnóstico</option>
+        <option value="16">Tratamiento</option>
+        <option value="17">Rehabilitación</option>
+        <option value="18">Paliación</option>
+        <option value="19">Planificación familiar y anticoncepción</option>
+        <option value="20">Promoción y apoyo a la lactancia materna</option>
+        <option value="21">Atención básica de orientación familiar</option>
+        <option value="22">Atención para el cuidado preconcepcional</option>
+        <option value="23">Atención para el cuidado prenatal</option>
+        <option value="24">Interrupción Voluntaria del Embarazo</option>
+        <option value="25">Atención del parto y puerperio</option>
+        <option value="26">Atención para el cuidado del recién nacido</option>
+        <option value="27">Atención para el seguimiento del recién nacido</option>
+        <option value="28">Preparación para la maternidad y la paternidad</option>
+        <option value="29">Promoción de actividad física</option>
+        <option value="30">Promoción de la cesación del tabaquismo</option>
+        <option value="31">Prevención del consumo de sustancias psicoactivas</option>
+        <option value="32">Promoción de la alimentación saludable</option>
+        <option value="33">Promoción para el ejercicio de los derechos sexuales y derechos reproductivos</option>
+        <option value="34">Promoción para el desarrollo de habilidades para la vida</option>
+        <option value="35">Promoción para la construcción de estrategias de afrontamiento frente a sucesos vitales</option>
+        <option value="36">Promoción de la sana convivencia y el tejido social</option>
+        <option value="37">Promoción de un ambiente seguro y de cuidado y proteción del ambiente</option>
+        <option value="38">Promoción del empoderamiento para el ejercicio del derecho a la salud</option>
+        <option value="39">Promoción para la adopción de prácticas de crianza y cuidado para la salud</option>
+        <option value="40">Promoción de la capacidad de agencia y de cuidado de la salud</option>
+        <option value="41">Desarrollo de habilidades cognitivas</option>
+        <option value="42">Intervención colectiva</option>
+        <option value="43">Modificación de la estética corporal (fines estéticos)</option>
+        <option value="44">Otra</option>
+        
+      </select>
+      </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+    <label id="dciMedicamento" for="dci">Descripción común del medicamento DCI: </label>
+    <input type="text" class="form-control" name="dci" id="dci" placeholder="dci" maxlength="4" required/>
+    </div>
+</div>
+  </section>
+
+  <section class="row">
+    <div class="col-md-4">
+      <div class="form-group">
+        <label for="fechaPrescripcion">Fecha prescripción medicamento: </label>
+        <input type="datetime-local" class="form-control" id="fechaPrescripcion" required>
+      </div>   
+   </div>
+   <div class="col-md-4">
+    <div class="form-group">
+    <label id="dosisPrescrita" for="dci">Dosis prescrita del medicamento DCI: </label>
+    <input type="text" class="form-control" name="dosisPrescrita" id="dosisPrescrita" placeholder="Dosis prescrita" maxlength="10" required/>
+    </div>
+</div>
+<div class="col-md-4">
+  <div class="form-group">
+  <label id="viaAdministracion" for="viaAdministracion">Vía administración del medicamento DCI: </label>
+  <input type="text" class="form-control" name="viaAdministracion" id="dci" placeholder="Vía administración" maxlength="4" required/>
+  </div>
+</div>
+  </section>
+  <section class="row">
+    <div class="col-md-4">
+      <div class="form-group">
+      <label id="duracionTratamiento" for="duracionTratamiento">Duración prescrita del tratamiento: </label>
+      <input type="text" class="form-control" name="duracionTratamiento" id="duracionTratamiento" placeholder="Duración tratamiento" maxlength="6" required/>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="form-group">
+      <label for="tiempoTratamiento">Unidad de tiempo tratamiento</label>
+      
+      <select class="form-control" id="unidadTiempo">
+        <option value="1">Minutos</option>
+        <option value="2">Horas</option>
+        <option value="3">Día</option>
+        <option value="4">Semana</option>
+        <option value="5">Mes</option>
+        <option value="6">Año</option>
+        <option value="7">Según respuesta al tratamiento</option>
+      
+        
+      </select>
+      </div>
+  </div>
+ 
+  </section>
+  <section class="row">
+    <div class="col-md-4">
+      <div class="form-group">
+      <label id="frecuenciaTratamiento" for="frecuenciaTratamiento">Frecuencia de administración del medicamento prescrito: </label>
+      <input type="text" class="form-control" name="frecuenciaTratamiento" id="frecuenciaTratamiento" placeholder="Frecuencia tratamiento" maxlength="6" required/>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+      <label for="tiempoTratamiento">Unidad de tiempo Frecuencia de administración.</label>
+      
+      <select class="form-control" id="unidadTiempo">
+        <option value="1">Minutos</option>
+        <option value="2">Horas</option>
+        <option value="3">Día</option>
+        <option value="4">Semana</option>
+        <option value="5">Mes</option>
+        <option value="6">Año</option>
+        <option value="7">Según respuesta al tratamiento</option>
+      
+        
+      </select>
+      </div>
+  </div>
+  </section>
+  <section class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+      <label id="cantidadMedicamento" for="cantidadMedicamento">Dosis administrada del medicamento institucionalmente: </label>
+      <input type="text" class="form-control" name="cantidadMedicamento" id="cantidadMedicamento" placeholder="Dosis institucional" maxlength="10" required/>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+      <label id="unidadMedida" for="unidadMedida">código unidad de medida de la dosis: </label>
+      <input type="text" class="form-control" name="unidadMedida" id="unidadMedida" placeholder="Código unidad de medida" maxlength="4" required/>
+      </div>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="col-md-3">
+      <div class="form-group">
+        <label for="fechaEntrega">Fecha entrega tecnología en salud: </label>
+        <input type="date" class="form-control" id="fechaEntrega" required>
+      </div>   
+   </div>
+   <div class="col-md-5">
+    <div class="form-group">
+    <label id="cantidadMedicamento" for="cantidadMedicamento">Dosis entregadas del medicamento: </label>
+    <input type="text" class="form-control" name="cantidadMedicamento" id="cantidadMedicamento" placeholder="Dosis institucional" maxlength="10" required/>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+    <label id="unidadMedida" for="unidadMedida">Unidad de medida de la dosis: </label>
+    <input type="text" class="form-control" name="unidadMedida" id="unidadMedida" placeholder="Código unidad de medida" maxlength="4" required/>
+    </div>
+  </div>
+  </section>
+  <section class="row">
+    <div class="col-md-5">
+      <div class="form-group">
+      <label id="cantidadMedicamento" for="cantidadMedicamento">Cantidad total entregada del medicamento: </label>
+      <input type="text" class="form-control" name="cantidadMedicamento" id="cantidadMedicamento" placeholder="Total unidades entregadas" maxlength="7" required/>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+      <label id="formaFarmaceutica" for="formaFarmaceutica">Código unidad de medida (FMM): </label>
+      <input type="text" class="form-control" name="codUdFmm" id="formaFarmaceutica" placeholder="Código unidad de medida FMM" maxlength="4" required/>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="row">
+
+    <div class="col-md-5">
+      <div class="form-group">
+        <label for="nombreProfesional">Nombre profesional (RETHUS) :</label>
+        <input type="text" class="form-control" id="nombreProfesional" maxlength="128" placeholder="Nombre" required>
+      </div>
+    </div>
+     
+            <div class="col-md-3">
+              <div class="form-group">
+              <label for="tipoDocumentoIdentificacion">Tipo de documento Identificación: *</label>
+              <select class="form-control" id="tipoId">
+              <option value="CC">CC Cédula de Ciudadanía</option>
+              <option value="CE">CE Cédula de Extranjería</option>
+              <option value="CD">CD Carné Diplomático</option>
+              <option value="PA">PA Pasaporte</option>
+              <option value="SC">SC Salvoconducto de permanencia</option>
+              <option value="PT">PT Permiso temporal de Permanencia</option>
+              <option value="PE">Permiso Especial de Permanencia</option>
+              <option value="RC">RC Registro Civil</option>
+              <option value="TI">TI tarjeta de Identidad</option>
+              <option value="CN">CN Certificado de nacido vivo</option>
+              <option value="AS">AS Adulto sin identificar</option>
+              <option value="MS">MS Menor sin identificar</option>
+              <option value="DE">Documento Extranjero</option>
+              <option value="SI">Sin identificacion</option>
+            </select>
+            </div>
+          </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label id="numDocumentoIdentificacion" for="numDocumentoIdentificacion">Numero de Identificación profesional: *</label>
+          <input type="text" class="form-control" name="numDocumentoIdentificacion" id="numDocumentoIdentificacion" placeholder="numero id" maxlength="10" required/>
+        </div>
+      </div>
+
+
+  </section>
+  <!-- Resultados tecnología en salud -->
+  <hr/> <br>
+  <section class="row">
+    <div class="col-md-12">
+      <h3>Resultados uso Tecnología en Salud.</h3>
+      <p></p>
+    </div>
+  </section>
+  <br>
+  <section class="row">
+
+
+    <div class="col-md-4">
+          <div class="form-group">
+          <label id="codDiagnosticoPrincipal" for="cie">Código CIE diagnóstico principal egreso: </label>
+          <input type="text" class="form-control" name="codDiagnosticoPrincipal" id="codDiagnosticoPrincipal" placeholder="codigo CIE" maxlength="20" required/>
+          </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+        <label for="nombreDiagnostico">Nombre del diagnóstico principal egreso:</label>
+        <input type="text" class="form-control" id="nombreDiagnostico" placeholder="nombre diagnostico" maxlength="30" required/>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="form-group">
+      <label for="triage">Diagnóstico principal de ingreso</label>
+
+          <select class="form-control" id="nivelTriage">
+            <option value="01">Inmpresión diagnóstica</option>
+            <option value="02">Confirmado nuevo</option>
+            <option value="03">Confirmado repetido</option>
+          
+          </select>
+      </div>
+    </div>
+
+  </section>
+<section class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+    <label id="codDiagnosticoRelacionado" for="codDiagnosticoRelacionado">Código CIE diagnóstico relacionado: </label>
+    <input type="text" class="form-control" name="codDiagnosticoRelacionado" id="codDiagnosticoRelacionado" placeholder="codigo CIE" maxlength="20" required/>
+    </div>
+</div>
+<div class="col-md-4">
+  <div class="form-group">
+  <label for="nombreDiagnostico">Nombre del diagnóstico relacionado:</label>
+  <input type="text" class="form-control" id="nombreDiagnostico" placeholder="nombre diagnostico" maxlength="30" required/>
+  </div>
+</div>
+
+</section>
+<section class="row">
+
+  <div class="col-md-10">
+    <div class="form-group">
+    <h6>Resultado de evaluación de valoración clínica o del resultado en salud:</h6>
+    </div>
+  </div>
+</section>
+  <section class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+      <label for="fechaAtencion">Fecha y hora : </label>
+      <input type="datetime-local" class="form-control" id="fechaAtencion" required>
+    </div>   
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+    <label for="instrEvaluacion">Identificador del instrumento de evaluación:</label>
+    <input type="text" class="form-control" id="instrEvaluacion" placeholder="Identificador del instrumento" maxlength="30" required/>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+    <label for="CodInstrEvaluacion">Código parámetro resultado observado:</label>
+    <input type="text" class="form-control" id="CodInstrEvaluacion" placeholder="código del instrumento" maxlength="30" required/>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+    <label for="ValorInstrEvaluacion">Valor resultado de evaluación:</label>
+    <input type="text" class="form-control" id="ValorInstrEvaluacion" placeholder="Valor resultado evaluación" maxlength="30" required/>
+    </div>
+  </div>
+</section>
+
+<section class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+    <label id="CIE-labelII" for="cie">Código CIE diagnóstico de la complicación: </label>
+    <input type="text" class="form-control" name="cieII" id="cieII" placeholder="codigo CIE" maxlength="20" required/>
+    </div>
+</div>
+<div class="col-md-4">
+  <div class="form-group">
+  <label for="nombreDiagnostico">Nombre del diagnóstico de la complicación:</label>
+  <input type="text" class="form-control" id="nombreDiagnostico" placeholder="nombre diagnostico" maxlength="30" required/>
+  </div>
+</div>
+
+</section>
+<section class="row">
+
+  <div class="col-md-6">
+    <div class="form-group">
+    <label for="condicionDestinoUsuarioEgreso">Condición y destino del usuario al egreso</label>
+
+        <select class="form-control" id="condicionDestinoUsuarioEgreso">
+          <option value="01">Paciente con destino a su domicilio</option>
+          <option value="02">Paciente muerto</option>
+          <option value="03">Paciente hospitalizado derivado de urgencias</option>
+          <option value="04">Referido a otra institución</option>
+          <option value="05">Contra referido a otra institución</option>
+          <option value="06">Derivado o referido a hospitalización domiciliaria</option>
+          <option value="07">Canalizado a servicio social</option>
+        </select>
+    </div>
+  </div>
+</section>
+
+<section class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+      <label for="fechaFinAtencion">Fecha y hora fin de la atención: </label>
+      <input type="datetime-local" class="form-control" id="fechaFinAtencion" required>
+    </div>   
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+    <label id="codDiagnosticoCausaMuerte" for="codDiagnosticoCausaMuerte">Código CIE diagnóstico de la causa básica de muerte: </label>
+    <input type="text" class="form-control" name="codDiagnosticoCausaMuerte" id="codDiagnosticoCausaMuerte" placeholder="codigo CIE" maxlength="20" required/>
+    </div>
+</div>
+<div class="col-md-4">
+  <div class="form-group">
+  <label for="nombreDiagnostico">Nombre del diagnóstico de la causa básica de muerte:</label>
+  <input type="text" class="form-control" id="nombreDiagnostico" placeholder="nombre diagnostico" maxlength="30" required/>
+  </div>
+</div>
+</section>
+<section class="row">
+  <div class="col-md-5">
+    <div class="form-group">
+      <label for="codigoPrestador">Código del prestador de servicios de salud donse se refiere:</label>
+      <input type="text" class="form-control" id="codigoPrestador" maxlength="128" placeholder="código prestador" required>
+    </div>
+  </div>
+ </section>
+
+<section class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+    <label for="incapacidad">Incapacidad posterior al procedimiento realizado</label>
+
+        <select class="form-control" id="incapacidad">
+          <option value="01">Nueva</option>
+          <option value="02">Prórroga</option>
+          </select>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <label for="diasIncapacidad">Días de incapacidad:</label>
+      <input type="number" class="form-control" id="diasIncapacidad" maxlength="128" placeholder="Días incapacidad" required>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <label for="diasMaternidad">Días de licencia de maternidad:</label>
+      <input type="number" class="form-control" id="diasMaternidad" maxlength="128" placeholder="Días licencia" required>
+    </div>
+  </div>
+</section>
+
+  <section class="row">
+
+    <div class="col-md-10">
+      <div class="form-group">
+      <h6>Antecedentes de salud:</h6>
+      </div>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+      <label for="alergenos">Antecedentes de factores alérgenos</label>
+  
+          <select class="form-control" id="alergenos">
+            <option value="01">Medicamento </option>
+            <option value="02">Alimento</option>
+            <option value="03">Sustancia del ambiente</option>
+            <option value="04">Sustancias que entran en contacto con la piel</option>
+            <option value="05">Picaduras de insectos</option>
+            <option value="06">Otra</option>
+          </select>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="form-group">
+      <label for="nombreAlergeno">Nombre del alérgeno:</label>
+      <input type="text" class="form-control" id="nombreAlergeno" placeholder="nombre alérgeno" maxlength="30" required/>
+      </div>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+      <label for="factoresRiesgo">Exposición a factores de riesgo</label>
+  
+          <select class="form-control" id="factoresRiesgo">
+            <option value="01">Químicos</option>
+            <option value="02">Físicos</option>
+            <option value="03">Biomecánicos</option>
+            <option value="04">Psicosociales</option>
+            <option value="05">Biológicos</option>
+            <option value="06">Otro</option>
+          </select>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="form-group">
+      <label for="nombreFactorRiesgo">Nombre del factor de riesgo:</label>
+      <input type="text" class="form-control" id="nombreAlergeno" placeholder="nombre Factor de riesgo" maxlength="30" required/>
+      </div>
+    </div>
+  </section>
+  <section class="row">
+
+    <div class="col-md-5">
+      <div class="form-group">
+        <label for="nombreProfesional">Nombre profesional (RETHUS) que realiza el egreso:</label>
+        <input type="text" class="form-control" id="nombreProfesional" maxlength="128" placeholder="Nombre" required>
+      </div>
+    </div>
+     
+            <div class="col-md-3">
+              <div class="form-group">
+              <label for="tipoDocumentoIdentificacion">Tipo de documento Identificación: *</label>
+              <select class="form-control" id="tipoId">
+              <option value="CC">CC Cédula de Ciudadanía</option>
+              <option value="CE">CE Cédula de Extranjería</option>
+              <option value="CD">CD Carné Diplomático</option>
+              <option value="PA">PA Pasaporte</option>
+              <option value="SC">SC Salvoconducto de permanencia</option>
+              <option value="PT">PT Permiso temporal de Permanencia</option>
+              <option value="PE">Permiso Especial de Permanencia</option>
+              <option value="RC">RC Registro Civil</option>
+              <option value="TI">TI tarjeta de Identidad</option>
+              <option value="CN">CN Certificado de nacido vivo</option>
+              <option value="AS">AS Adulto sin identificar</option>
+              <option value="MS">MS Menor sin identificar</option>
+              <option value="DE">Documento Extranjero</option>
+              <option value="SI">Sin identificacion</option>
+            </select>
+            </div>
+          </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label id="num" for="dni">Numero de Identificación: *</label>
+          <input type="text" class="form-control" name="idn" id="idn" placeholder="numero id" maxlength="10" required/>
+        </div>
+      </div>
+
+
+  </section>
+
+      <!--  Comentarios  -->
+      <hr/> <br>
+      <section class="row">
+        <div class="col-md-12">
+          <h3>Comentarios.</h3>
+          <p></p>
+        </div>
+      </section>
+      <section class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="comment">Escriba aquí los comentarios que considera son relevantes en el registro de la atención prestada:</label>
+            <textarea class="form-control" rows="6" id="comentarios"></textarea>
+          </div>
+        </div>
+      </section>
+      <section class="row">
+        <div class="col-md-12">
+          <button type="button" class="btn btn-info" id="saveForm" onclick="saveForm">Guardar Encuesta</button>
+          <button type="button" class="btn btn-danger" id="clearForm">Limpiar formulario</button>
+        </div>
+      </section>
+    </div>
+  
+    <br /><br />
+    
+  <!-- partial -->
+  </body>
+  </html>
+  
+      
+      
+    <!-- CONTACT -->
+    
+
+    <footer>
+      <div class="container p-3">
+        <div class="row text-center text-white">
+          <div class="col ml-auto">
+            <p>Todos los derechos reservados para IWV  </p>
+      <p>e-mail: telesalud.iwv@gmail.com </p> <p>Copyright &copy; 2021</p>
+          </div>
+        </div>
+      </div>       
+    </footer>
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>

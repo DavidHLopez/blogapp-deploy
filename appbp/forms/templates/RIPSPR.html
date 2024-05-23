@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>interfaces TIC</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="static/css/main.css">
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="static/img/logo.png" style="width: 20%;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Página de inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Archivo HCUE </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ingresar/salir </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+    <div class="container">
+      <section class="row">
+        <div class="col-md-12">
+          <h1 class="text-center">Registro Individual Prestación Servicio de Salud</h1>
+          <h1 class="text-center">RIPS</h1>
+          <p class="text-center">Adaptación de res 2806 de 2022, Ministerio de salud de Colombia</p>
+        </div>
+        <!-- Datos relativos a la transacción -->
+      </section>
+      <hr><br />
+<section class="json-response">
+
+      <form> 
+      
+
+      <div class="row">
+        <section class="col-md-12">
+          <h3>Datos relativos a la transacción</h3>
+          <br />
+        </section>
+      </div>
+     
+      <section class="row">
+   
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="nombre1">Nombre prestador emisor:</label>
+          <input type="text" class="form-control" name="nombreProfesional" id="nombreProfesional" maxlength="128" placeholder="Nombre" required>
+        </div>
+      </div>
+    
+     
+
+            
+        <div class="col-md-6">
+          <div class="form-group">
+            <label id="numDocumentoIdObligado" for="numDocumentoIdObligado">Numero de Identificación (NIT):</label>
+            <input type="text" class="form-control" name="numDocumentoIdObligado" id="numDocumentoIdObligado" placeholder="numero id" maxlength="10" required/>
+          </div>
+        </div>
+     
+    </section>
+
+      <section class="row">
+      <div class="col-md-5">
+        <div class="form-group">
+          <label id="numFactura" for="dni">Numero de Factura:</label>
+          <input type="text" class="form-control" name="numFactura" id="numFactura" placeholder="numero id" maxlength="10" required/>
+        </div>
+      </div>
+    
+    <div class="col-md-3">
+      <div class="form-group">
+      <label for="tipoNota">Tipo de Nota </label>
+      
+      <select class="form-control" id="tipoNota" name="tipoNota">
+        <option value="00">Ninguno</option>
+        <option value="01">Debito</option>
+        <option value="02">Crédito</option>
+        <option value="03">Nota de ajuste</option>
+
+      </select>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="form-group">
+        <label id="numNota" for="dni">Numero de Nota:</label>
+        <input type="text" class="form-control" name="numNota" id="numNota" placeholder="numero de nota" maxlength="10" required/>
+      </div>
+    </div>
+      </section>
+  
+     
+
+            <!-- Datos relativos a los usuarios -->
+      <hr><br />
+     
+      
+
+      <div class="row">
+        <section class="col-md-12">
+          <h3>Datos relativos a los usuarios</h3>
+          <br />
+        </section>
+      </div>
+      <section class="row">
+
+       
+              <div class="col-md-4">
+                <div class="form-group">
+                <label for="tipoDocumentoIdentificacion">Tipo de documento Identificación: </label>
+                <select class="form-control" name="tipoDocumentoIdentificacion" id="tipoDocumentoIdentificacion">
+                <option value="CC">CC Cédula de Ciudadanía</option>
+                <option value="CE">CE Cédula de Extranjería</option>
+                <option value="CD">CD Carné Diplomático</option>
+                <option value="PA">PA Pasaporte</option>
+                <option value="SC">SC Salvoconducto de permanencia</option>
+                <option value="PT">PT Permiso temporal de Permanencia</option>
+                <option value="PE">Permiso Especial de Permanencia</option>
+                <option value="RC">RC Registro Civil</option>
+                <option value="TI">TI tarjeta de Identidad</option>
+                <option value="CN">CN Certificado de nacido vivo</option>
+                <option value="AS">AS Adulto sin identificar</option>
+                <option value="MS">MS Menor sin identificar</option>
+                <option value="DE">Documento Extranjero</option>
+                <option value="SI">Sin identificacion</option>
+              </select>
+              </div>
+            </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label id="numDocumentoIdentificacion" for="numDocumentoIdentificacion">Numero de Identificación: </label>
+            <input type="text" class="form-control" name="numDocumentoIdentificacion" id="numDocumentoIdentificacion" placeholder="numero id" maxlength="20" required/>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+          <label for="codPaisOrigen">País de origen:</label>
+          <input type="text" class="form-control" id="codPaisOrigen" name="codPaisOrigen" placeholder="País de origen" maxlength="12" required/>
+        </div>
+        </div>
+      </section>
+
+<section class="row">
+
+        <div class="col-md-4">
+          <div class="form-group">
+          <label for="tipoUsuario">Tipo de usuario - Régimen de afiliación: </label>
+          <select class="form-control" name="tipoUsuario" id="tipoUsuario">
+          
+          <option value="01">Subsiadiado</option>
+          <option value="02">Contributivo</option>
+          <option value="03">Beneficiario vinculado</option>
+          <option value="04">Otro</option>
+          
+        
+          </select>
+          </div>
+        </div>
+
+     
+         <div class="col-md-4">
+         <div class="form-group">
+           <label for="fechaNacimiento">Fecha de Nacimiento: </label>
+           <input type="date" class="form-control" name="fechaNacimiento" id="fechaNacimiento" required>
+         </div> 
+         </div>
+
+             
+         <div class="col-md-4">
+            <div class="form-group">
+              <label for="codSexo">Sexo biológico: </label>
+                <select class="form-control" name="codSexo" id="codSexo">
+                <option value="01">Masculino</option>
+                <option value="02">Femenino</option>
+                <option value="03">indeterminado/intersexual</option>               
+              </select>
+                </div>
+         </div>   
+        
+     </section>  
+ 
+
+
+<section class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+    <label for="codPaisResidencia">País de residencia habitual:</label>
+    <input type="tel" class="form-control" name="codPaisResidencia" id="codPaisResidencia" placeholder="código País" maxlength="12" required/>
+  </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+    <label for="codMunicipioResidencia">Municipio de residencia habitual:</label>
+    <input type="tel" class="form-control" name="codMunicipioResidencia" id="codMunicipioResidencia" placeholder="Municipio de residencia" maxlength="12" required/>
+  </div>    
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+    <label for="codZonaResidencia">Zona territorial de residencia: </label>
+    <select class="form-control" name="codZonaTerritorialResidencia" id="codZonaTerritorialResidencia">
+    
+    <option value="01">Urbana</option>
+    <option value="02">Rural</option>
+    
+    </select>
+    </div>
+  </div>
+</section>
+
+ <section class="row">
+
+  <div class="col-md-4">
+    <div class="form-group">
+    <label for="incapacidad">Incapacidad: </label>
+
+        <select class="form-control" name="incapacidad" id="incapacidad">
+          <option value="00">No</option>
+          <option value="01">Nueva</option>
+          <option value="02">Prórroga</option>
+          
+          </select>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="consecutivo">Consecutivo incapacidad: </label>
+    <input type="number" class="form-control" name="consecutivo" id="consecutivo" placeholder="Numero consecutivo" maxlength="12" required/>
+  </div>
+
+</section>
+
+
+      <!--  Comentarios  -->
+      <hr/> <br>
+      <section class="row">
+        <div class="col-md-12">
+          <h3>Comentarios.</h3>
+          <p></p>
+        </div>
+      </section>
+      <section class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="comment">Escriba aquí los comentarios que considera son relevantes en el registro de la atención prestada:</label>
+            <textarea class="form-control" rows="6" id="comentarios"></textarea>
+          </div>
+        </div>
+      </section>
+      <section class="row">
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-info" id="saveForm" onclick="saveForm" >Guardar Encuesta</button>
+          <button type="button" class="btn btn-danger" id="clearForm">Limpiar formulario</button>
+        </div>
+      </section>
+    </div>
+  </form>
+</section>
+    <br /><br />
+    
+  <!-- partial -->
+  <div class="results">
+    <h2>Form Data</h2>
+    <pre>
+
+    </pre>
+  </div>
+
+
+<script>
+function handleFormSubmit(event) {
+  event.preventDefault();
+  
+  const data = new FormData(event.target);
+  
+  const formJSON = Object.fromEntries(data.entries());
+
+  
+  
+  const results = document.querySelector('.results pre');
+  results.innerText = JSON.stringify(formJSON, null, 2);
+}
+
+const form = document.querySelector('.json-response');
+form.addEventListener('submit', handleFormSubmit);
+</script>
+
+
+  </body>
+  </html>
+  
+      
+      
+    <!-- CONTACT -->
+    
+
+    <footer>
+      <div class="container p-3">
+        <div class="row text-center text-white">
+          <div class="col ml-auto">
+            <p>Todos los derechos reservados para IWV  </p>
+      <p>e-mail: telesalud.iwv@gmail.com </p> <p>Copyright &copy; 2021</p>
+          </div>
+        </div>
+      </div>       
+    </footer>
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
